@@ -1,0 +1,11 @@
+{
+  "name": "sharepay-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SharePay Hub - mô-đun quỹ chung và chia tiền (demo, Nhóm 1 Marketing ngân hàng)",
+  "scripts": {
+    "dev": "vercel dev",
+    "test": "node test/api.test.js"
+  },
+  "engines": { "node": ">=18" }
+}
