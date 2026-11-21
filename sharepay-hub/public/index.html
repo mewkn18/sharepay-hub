@@ -1151,7 +1151,10 @@ select{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
 @media(max-width:760px){
  input,select,textarea{font-size:16px!important}
  .gear{top:calc(env(safe-area-inset-top,0px) + 8px)!important;bottom:auto!important;right:10px!important;width:28px!important;height:28px!important;opacity:.55}.onbot .gear{display:none!important}
- .phone .sb{display:none!important}
+ .phone .sb{display:block!important;background:none!important;pointer-events:none;z-index:90}
+ .phone .sbl,.phone .sbr{display:none!important}
+ .phone .isl{top:calc(env(safe-area-inset-top,0px) + 12px);opacity:0;transition:opacity .2s,width .46s cubic-bezier(.2,1.18,.34,1),height .46s cubic-bezier(.2,1.18,.34,1),margin-left .46s cubic-bezier(.2,1.18,.34,1),border-radius .46s cubic-bezier(.2,1.18,.34,1)}
+ .phone[data-fi] .isl{opacity:1;box-shadow:0 14px 34px #000a,0 0 0 1px #ffffff22}
  .phone{padding-bottom:env(safe-area-inset-bottom)}
  #tour{max-height:40vh;overflow:auto}
  .dx{min-width:36px;min-height:36px;font-size:15px}
